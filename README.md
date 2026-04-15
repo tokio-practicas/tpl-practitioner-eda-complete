@@ -38,11 +38,29 @@ Completa el notebook `notebook/practica_eda.ipynb` siguiendo el checklist de EDA
 6. **Hallazgos (mínimo 5)** — Cada uno con título, evidencia (gráfico) e implicación de negocio
 7. **Resumen ejecutivo** — Un párrafo para tu manager con las conclusiones clave
 
-## Entrega
+## Cómo entregar
 
-- Haz push del notebook completado a `main`
-- Tests automáticos + revisión IA se ejecutan al hacer push
-- Feedback como comentario en tu commit
+Esta práctica usa un flujo basado en **Pull Requests**. No puedes hacer push directo a `main`.
+
+1. **Crea una rama de entrega**:
+   ```bash
+   git checkout -b entrega
+   ```
+2. **Completa la práctica y commitea**:
+   ```bash
+   git add .
+   git commit -m "Mi entrega"
+   ```
+3. **Sube la rama**:
+   ```bash
+   git push -u origin entrega
+   ```
+4. **Abre un Pull Request** desde la web de GitHub (`entrega` → `main`).
+5. **Recibirás feedback automáticamente** en el PR:
+   - Resultados de los tests (pytest)
+   - Revisión del código con IA (Claude)
+6. **Itera**: cada nuevo commit que hagas en la rama `entrega` dispara una nueva revisión y actualiza el PR.
+7. **Cerrar entrega**: haz merge del PR a `main` cuando los tests pasen y estés contento con el feedback. Solo podrás mergear si los tests pasan.
 
 ## Evaluación
 
